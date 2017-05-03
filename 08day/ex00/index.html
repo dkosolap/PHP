@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="con">
+			<h1 class="log">Game start</h1>	
+			<div class="but">
+				<input type="button" name="start" value="Start" onkeydown="getChar(event.keyCode);">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="info info-left">
+			<h1>Player 1</h1>
+			<h3 class="shipA"></h3>
+			<h3 class="stepA"></h3>
+			<h3 class="shotA"></h3>
+		</div>
+		<div id="content">
+
+		</div>
+		<div class="info info-right">
+			<h1>Player 2</h1>
+			<h3 class="shipB" ></h3>
+			<h3 class="stepB" ></h3>
+			<h3 class="shotB" ></h3>
+		</div>
+	</div>
+	<div class="container footer">
+		<h3>Arrow : move</h3>
+		<h3>Space : shot</h3>
+		<h3>Enter : change player</h3>
+		<h3>Escape : restart</h3>
+	</div>
+	<script type="text/javascript" src="move.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

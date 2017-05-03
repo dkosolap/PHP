@@ -1,0 +1,111 @@
+body {
+  background: #3e3e40 url(http://www.sncf.com/sites/all/themes/sncfninesixty/images/background.gif) fixed repeat;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  margin: 0px auto;
+  padding: 20px 0;
+}
+
+.container {
+  display: block;
+  width: 300px;
+  padding-bottom: 55px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.menu-item .text{
+  display: block;
+  position: relative;
+  padding: 15px 40px;
+  border: 1px solid lightgrey;
+  border-left: none;
+  border-right: none;
+}
+
+.sub-menu {
+  display: none;
+  color: #ccc;
+  padding: 20px 0;
+  background: url(http://www.sncf.com/sites/all/modules/custom/sncfcom_navigation/theme/images/Fond_menu_n2.png) repeat
+}
+
+.sub-menu a {
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.sub-menu li:hover a{
+  color: white;
+}
+
+.sub-menu li{
+  position: relative;
+  padding: 10px 20px;
+  padding-left: 45px;
+  margin: 0px 30px;
+  font-size: 13px;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #333;
+}
+
+.sub-menu li:first-child {
+  border-top: none;
+}
+
+.sub-menu li:last-child {
+  border-bottom: none;
+}
+
+.main-item:focus ~ .sub-menu, 
+.main-item:active ~ .sub-menu, 
+.sub-menu:hover {
+   display: block;
+   box-shadow: inset 0px 14px 15px -6px rgba(0,0,0,0.75);
+}
+
+.icon:before {
+  content: " ";
+  position: absolute;
+  width: 28px;
+  height: 37px;
+  left: 7px;
+  top: -3px;
+  display: inline-block;
+}
+
+.time:before {
+  background: url(http://www.sncf.com/ressources/imagecache/sncfcom_rebound_icon/menu_icons/menu_icon_1525.png);
+}
+
+.serv:before {
+  background: url(http://www.sncf.com/ressources/imagecache/sncfcom_rebound_icon/menu_icons/menu_icon_1546.png);
+}
+
+.res:before {
+  background: url(http://www.sncf.com/ressources/imagecache/resize-150/menu_icons/menu_icon_1526.png);
+}
+
+.hor:before {
+  top: 7px;
+  background: url(http://www.sncf.com/ressources/imagecache/resize-150/menu_icons/menu_icon_1527.png);
+}
+
+.inf:before {
+  background: url(http://www.sncf.com/ressources/imagecache/resize-150/menu_icons/menu_icon_5660.png);
+}

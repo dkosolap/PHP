@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+	body {
+		z-index: 0;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		vertical-align: middle;
+		height: 90vh;
+	}
+	.circle {
+		width: 200px;
+		height: 200px;
+		background: red;
+		border-radius: 50%;
+		margin: auto;
+		z-index: 1;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="circle" onclick="plus();" onmouseout="minus();"></div>
+	</div>
+</body>
+<script>
+	var circle = document.querySelector('.circle');
+	circle.style.height = '200px';
+	circle.style.width = '200px';
+	circle.style.background = 'red';
+	function plus() {
+		circle.style.height = (parseInt(circle.style.height) + 10)  + 'px';
+		circle.style.width =  (parseInt(circle.style.width) + 10)  + 'px';
+		if (parseInt(circle.style.width) == 430)
+		{
+			circle.style.height = 200  + 'px';
+			circle.style.width =  200  + 'px';
+		}
+		switch (circle.style.background)
+		{
+			case 'red':
+				circle.style.background = 'green'
+				break;
+			case 'green':
+				circle.style.background = 'blue'
+				break;
+			case 'blue':
+				circle.style.background = 'red'
+				break;
+		}
+	}
+	function minus() {
+		if (parseInt(circle.style.height) > 200)
+		{
+			circle.style.height = (parseInt(circle.style.height) - 10)  + 'px';
+			circle.style.width =  (parseInt(circle.style.width) - 10)  + 'px';
+		}
+		switch (circle.style.background)
+		{
+			case 'red':
+				circle.style.background = 'blue'
+				break;
+			case 'blue':
+				circle.style.background = 'green'
+				break;
+			case 'green':
+				circle.style.background = 'red'
+				break;
+		}
+	}
+</script>
+</html>

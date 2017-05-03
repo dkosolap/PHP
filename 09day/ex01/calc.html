@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+	</style>
+</head>
+<body>
+<form>
+        <input type="text" id="left" value="">
+        <select  id="op" value="">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right" value="">
+        <input type="submit" value="Try me!" onclick="calc();">
+</body>
+<script>
+var a, b, op, res, idTime;
+
+function showFu()
+{
+	alert("Please, use me...");
+}
+
+idTime = setInterval(showFu, 30000);
+function calc() {
+	a = parseInt(document.getElementById('left').value);
+	b = parseInt(document.getElementById('right').value);
+	op = document.getElementById('op').value;
+	res = 0;
+    if (op == '+' && a >= 0 && b >= 0)
+        res = a + b;
+    else if (op == '-' && a >= 0 && b >= 0)
+        res = a - b;
+    else if (op == '*' && a >= 0 && b >= 0)
+        res = a * b;
+    else if (op == '/' && a >= 0 && b >= 0)
+    {
+        if (b == 0)
+            res = 'It’s over 9000!';
+        else
+            res = a / b;
+    }
+    else if (op == '%' && a >= 0 && b >= 0)
+    {
+        if (b == 0)
+            res = 'It’s over 9000!';
+        else
+            res = a % b;
+    }
+    else
+        res = 'Error :(';
+    console.log(res);
+    alert(res);
+    clearInterval(idTime);
+	idTime = setInterval(showFu, 30000);
+}
+</script>
+</html>

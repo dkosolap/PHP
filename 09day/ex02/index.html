@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	* {
+		font-family: Helvetica;
+	}
+	#ft_list div {
+		padding: 10px 20px;
+		background: #f79;
+		margin: 2px;
+	}
+	input {
+		display: block;
+		width: 120px;
+	}
+	.container {
+		width: 500px;
+		margin: 0 auto;
+		direction: flex;
+		flex-direction: row;	}
+	.container * {
+		margin: auto;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<input type="button" name="New" value="New" onclick="addNew();">
+		<div id="ft_list"></div>
+	</div>
+<script>
+	var ft_list = document.querySelector('#ft_list');
+	var count = 1;
+	function addNew() {
+		var res = prompt("Введите новую запись", "");
+		// console.log(res);
+		if (!res)
+			return ;
+		var newEl = document.createElement('div');
+		newEl.innerHTML = count + ' ' + res;
+		count++;
+		newEl.onclick = delEl;
+		ft_list.insertBefore(newEl, ft_list.children[0]);
+	}
+	function delEl()
+	{
+		res = confirm("Вы точно хотите удалить елемент?");
+		if (res)
+			ft_list.removeChild(this);
+	}
+
+</script>
+</body>
+</html>

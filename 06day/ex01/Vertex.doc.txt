@@ -1,0 +1,10 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex Class handles coordinates of point in space with it color.
+Color is an instance of class Color.
+An instance io Vertex can be constructed from values x, y, z, 
+and not mandatory w (multiplayer) and color.
+Default value of w is 1.0, and default value of color is white (255, 255, 255).
+If insance of Vertex takes papam 'color', which is not an instance of Color,
+the 'color' value will be initialise as White (255, 255, 255).
+---------------------------------------------------------------------- Vertex ->

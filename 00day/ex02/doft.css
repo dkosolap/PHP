@@ -1,0 +1,167 @@
+body {
+	background: #555;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1300px;
+	margin: 10px auto;
+}
+
+header {
+	position: relative;
+	background: #919191;
+	border-radius: 15px;
+	box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.95);
+}
+
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.logo {
+	width: 32%;
+	margin: 10px;
+	float: left;
+}
+
+.loupe {
+	position: absolute;
+	right: 20px;
+}
+
+.reload {
+	position: absolute;
+	width: 20px;
+	right: 10px;
+	top: 10px;
+}
+
+.close {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+/*LEFT*/
+
+.left {
+	width: 10%;
+	height: 400px;
+	float: left;
+	margin: 20px 20px;
+	background: #919191;
+	border-radius: 15px;
+	box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.95);
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+	padding: 5px;
+ 	border: 3px solid rgba(0,0,0,0);
+}
+
+li a:focus {
+ 	border: 3px solid #F00;
+ 	outline: none;
+}
+
+li a img {
+	width: 100%;
+}
+
+/*CENTER*/
+
+.center {
+	width: 70%;
+	float: left;
+	margin: 20px 20px;
+	height: 530px;
+	background: #919191;
+	border-radius: 15px;
+	box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.95);
+}
+
+.center img{
+	width: 98%;
+	padding: 10px;
+}
+.map {
+	position: relative;
+}
+.apple {
+	display: block;
+	position: absolute;
+	width: 155px;
+	height: 135px;
+	right: 25px;
+	bottom: 100px;
+}
+
+.ikea {
+	display: block;
+	position: absolute;
+	width: 117px;
+	height: 185px;
+	left: 302px;
+	bottom: 31px;
+}
+
+form {
+	width: 400px;
+	padding: 25px;
+	background: #3F3;
+	border-radius: 10px;
+	box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.95);
+	position: absolute;
+	left: -210px;
+	bottom: -80px;
+}
+
+form b {
+	font-size: 1.7em;
+}
+
+form span {
+	text-shadow: 4px 4px 2px rgba(255, 0, 0, 1);
+}
+
+/*RIGHT*/
+
+.right {
+	float: left;
+	width: 10%;
+	height: 400px;
+	margin: 20px 20px;
+	padding-right: 10px; 
+	background: #919191;
+	border-radius: 15px;
+	box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.95);
+}
+
+li {
+	display: block;
+	list-style: none;
+}
+
+.wall {
+	font-size: 0px;
+	width: 130px;
+}
+
+.wall img {
+	width: 32%;
+	margin: 0;
+	display: inline-block;
+}

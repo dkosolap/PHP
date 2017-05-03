@@ -1,0 +1,34 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class makes vectors and some additional calculations.
+An instance of Vector can be constructed from array, which contains from:
+dest - mandaytory object, an instance of Vertex class. This is destination
+    of vector direction;
+orig - optional. An instance of Vertex class, start of vector. Dy default
+    this element installed as (0, 0, 0);
+new Vector = (array('dest' => $vertex_dest, 'orig' => $vertex_orig) - vector
+    will be constructed by 'dest' and 'orig'.
+new Vector = (array('dest' => $vertex_dest) - vector will be constructed by
+    dest and default value of 'orig'.
+The class provides the following methods:
+float   magnitude();
+    Returns the length of vector.
+Vector  normalize();
+    Returns a normalized version of the vector. If the vector is already
+    normalized, returns a fresh copy of the vector.
+Vector  add( Vector $rhs );
+    Returns the sum vector of current vector and $rhs.
+Vector  sub( Vector $rhs );
+    Returns the difference vector of current and $rhs vectors.
+Vector  opposite();
+    Returns the opposite vector to current.
+Vector  scalarProduct( $k );
+    Returns the multiplication of the vector with a scalar.
+float   dotProduct( Vector $rhs );
+    Returns the scalar multiplication of both current and $rhs vectors.
+float   cos( Vector $rhs );
+    Returns the angle’sAppendix cosine between both current and $rhs vectors.
+Vector  crossProduct( Vector $rhs );
+    Returns the cross multiplication of both current and $rhs vectors,
+    calculated by "right-hand" mark.
+---------------------------------------------------------------------- Vector ->

@@ -1,0 +1,86 @@
+body {
+	font-family: Helvetica;
+}
+table {
+	width: 95%;
+	margin: 0 auto;
+	background: #CCC;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+	padding: 5px;
+}
+span {
+	display: block;
+}
+.num {
+	text-align: left;
+	font-size: .7em;
+}
+.lit {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1em;
+}
+.name {
+	text-align: center;
+	font-size: .6em;
+}
+.mass {
+	text-align: right;
+	font-size: .7em;
+}
+.left {
+	width: 40%;
+	margin: 15px auto;
+	text-align: center;
+	border: 1px solid #000;
+}
+img {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+	.name {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	th {
+		display: none;
+	}
+	h1 {
+		font-size: 1.3em;
+	}
+	p {
+		font-size: .7em;
+	}
+	.num {
+		font-size: .4em;
+	}
+	.lit {
+		font-size: .7em;
+	}
+	.mass {
+		font-size: .4em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	table {
+		margin: 30% -125px;
+		transform: rotate(90deg);
+	}
+	.left {
+		display: none;
+	}
+	th {
+		display: table-cell;
+	}
+}
